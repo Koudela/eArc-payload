@@ -18,18 +18,6 @@ namespace eArc\Payload\Interfaces;
 interface PayloadCarrierInterface
 {
     /**
-     * If an initializer is supplied it get called if the payload on
-     * construction time is null or on reset(). The return value is taken as
-     * payload. Otherwise the payload is set to null.
-     *
-     * If the payload is null, the payload carrier has no payload.
-     *
-     * @param mixed|null $payload
-     * @param callable|null $initializer
-     */
-    public function __construct($payload = null, ?callable $initializer = null);
-
-    /**
      * Check whether a payload is carried.
      *
      * @return bool

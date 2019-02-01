@@ -22,7 +22,13 @@ class PayloadCarrier implements PayloadCarrierInterface
     protected $payload;
 
     /**
-     * @param mixed|null    $payload
+     * If an initializer is supplied it get called if the payload on
+     * construction time is null or on reset(). The return value is taken as
+     * payload. Otherwise the payload is set to null.
+     *
+     * If the payload is null, the payload carrier has no payload.
+     *
+     * @param mixed|null $payload
      * @param callable|null $initializer
      */
     public function __construct($payload = null, ?callable $initializer = null)
@@ -81,6 +87,7 @@ class PayloadCarrier implements PayloadCarrierInterface
     protected function init()
     {
         if (null === $this->initializer) {
+            $this->payload = null;
             return;
         }
 
