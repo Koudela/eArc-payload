@@ -1,6 +1,6 @@
-# eArc-payload
+# earc/payload
 
-Simple payload carrier object and interface.
+Basic payload carrier blueprint.
 
 # installation
 

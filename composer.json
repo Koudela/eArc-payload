@@ -1,6 +1,6 @@
 {
     "name": "earc/payload",
-    "description": "eArc - the explicit architecture framework - payload object",
+    "description": "eArc - the explicit architecture framework - basic payload blueprint",
     "type": "library",
     "license": "MIT",
     "version": "0.1.0",

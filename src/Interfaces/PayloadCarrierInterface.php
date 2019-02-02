@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 /**
  * e-Arc Framework - the explicit Architecture Framework
- * base payload object/interface
+ * basic payload blueprint
  *
  * @package earc/payload
  * @link https://github.com/Koudela/eArc-payload/
